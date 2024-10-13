@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('./images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 70px;
+  width: 450px;
+  height: auto; /* Changed to auto to fit content */
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  text-align: left; /* Align text to the left */
+}
+
+.logo {
+  width: 170px;
+  height: 35px; /* Adjust logo size */
+  margin-bottom: 10px; /* Space between logo and heading */
+}
+
+h2 {
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.welcome-text {
+  color: #666; /* Slightly lighter color */
+  margin-bottom: 20px; /* Space below welcome text */
+  margin-top: 15px;
+  font-size: 20px; /* Font size for welcome text */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 94%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #e93c3c;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #c92727;
+}
+
+.message {
+  color: red;
+  margin-top: 30px;
+  font-size: 16px;
+}
