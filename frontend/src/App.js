@@ -46,7 +46,7 @@ function Signup() {
     <div className="App">
       <div className="signup-container">
         <img src={logo} alt="Logo" className="logo" />
-        <h2>Sign Up</h2>
+        <h2>Promotional Sign Up</h2>
         <p className="welcome-text">with your MyRogers credentials</p>
         <form onSubmit={handleSubmit}>
           <input
@@ -85,8 +85,8 @@ function Welcome() {
     <div className="App">
       <div className="signup-container">
         <img src={logo} alt="Logo" className="logo" />
-        <h2>Welcome, {username}!</h2>
-        <p className="welcome-text">You have successfully signed up.</p>
+        <h2>Thanks, {username}!</h2>
+        <p className="welcome-text">You have successfully signed up for this promotion. For further assistance talk to agent.</p>
         {/* You can replicate more of the signup structure if needed */}
       </div>
     </div>

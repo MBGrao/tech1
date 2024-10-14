@@ -13,7 +13,7 @@ app.use(cors({
 }));
 app.use(express.json());
 
-const mongoURI = process.env.MONGODB_URI; // Ensure this is correctly set in your .env file
+const mongoURI = process.env.MONGODB_URI;
 console.log('MongoDB URI:', mongoURI);
 
 if (!mongoURI) {
