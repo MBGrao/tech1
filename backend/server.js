@@ -7,7 +7,7 @@ require('dotenv').config();
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
   methods: ['GET', 'POST'],
   credentials: true
 }));
@@ -31,7 +31,6 @@ const UserSchema = new mongoose.Schema({
 });
 
 const User = mongoose.model('User', UserSchema);
-
 
 app.post('/api/signup', async (req, res) => {
   try {
@@ -78,5 +77,10 @@ app.post('/api/login', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// Conditionally start the server for local development
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
+
+module.exports = app;

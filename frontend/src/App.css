@@ -18,17 +18,17 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   padding: 70px;
   width: 450px;
-  height: auto; /* Changed to auto to fit content */
+  height: auto;
   position: relative;
   z-index: 1;
   backdrop-filter: blur(10px);
-  text-align: left; /* Align text to the left */
+  text-align: left;
 }
 
 .logo {
   width: 170px;
-  height: 35px; /* Adjust logo size */
-  margin-bottom: 10px; /* Space between logo and heading */
+  height: 35px;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -39,10 +39,10 @@ h2 {
 }
 
 .welcome-text {
-  color: #666; /* Slightly lighter color */
-  margin-bottom: 20px; /* Space below welcome text */
+  color: #666;
+  margin-bottom: 20px;
   margin-top: 15px;
-  font-size: 20px; /* Font size for welcome text */
+  font-size: 20px;
 }
 
 input[type="text"],
